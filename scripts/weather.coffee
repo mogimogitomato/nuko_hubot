@@ -6,7 +6,7 @@
 
 module.exports = (robot) ->
   send = (msg) ->
-    request = robot.http("http://api.openweathermap.org/data/2.5/weather?q=Yokohama,jp&appid=88f452d489f08a1ca2da3c52e600a7f0&units=metric").get()
+    request = robot.http("http://api.openweathermap.org/data/2.5/weather?q=Yokohama,jp&appid=APIKEY&units=metric").get()
 
     stMessage = request (err, res, body) ->
       json = JSON.parse body
